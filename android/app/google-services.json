@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945049016359",
+    "project_id": "flash-chat-ddaab",
+    "storage_bucket": "flash-chat-ddaab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945049016359:android:a4dec24349f1441a4dd602",
+        "android_client_info": {
+          "package_name": "co.HaidyAhmed.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945049016359-3n9kjcbdknmc468rqtbjf41r15p90dap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApXB7Jwa26dwC6K8d8_lAHpla8fcqqzDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945049016359-3n9kjcbdknmc468rqtbjf41r15p90dap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
