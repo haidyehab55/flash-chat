@@ -25,17 +25,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ModalProgressHUD(
+        inAsyncCall: spinState,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               SizedBox(
@@ -76,6 +79,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     if(newUser != null) {
                       Navigator.pushNamed(context, ChatScreen.id);
                     }
+                    spinState = false;
                   }
                   catch(e) {
                     print(e);
